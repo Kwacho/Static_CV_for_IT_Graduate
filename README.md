@@ -9,7 +9,7 @@ Demo Version to Download available at:
 Tutorial/Post available at:
 	http://sharemyweb.com/demo/assets/static_cv_for_it_graduate/
 
-- Download files from: http://sharemyweb.com/wp-content/uploads/2016/05/ajax_shopping_cart_sharemyweb_com.zip
+- Download files from:  http://sharemyweb.com/wp-content/uploads/2016/06/static_cv_for_it_graduate.zip 
 - Open CV in any browser of your choice
 
 More information regarding usage or further development:
