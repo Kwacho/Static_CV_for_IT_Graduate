@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<!--head section -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">    
+<!--    Page Title-->
+<title>Static CV for IT Graduate: HTML, CSS, JavaScript, jQuery, Bootstrap</title>    
+<!--    Awesome Fonts-->
+<link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
+<!-- BOOTSTRAP: Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<!--<link href="bootstrap-3.3.6/css/bootstrap-theme.min.css" rel="stylesheet" media="screen"> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<!-- BOOTSTRAP: Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>        
+<!--Logo/favicon/icon-->
+<link rel="shortcut icon" type="image/x-icon" href="http://sharemyweb.com/wp-content/uploads/2016/01/ShareMyWeb_Favicon.png" />    
+<!--Google Map-->
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+<!--Main CSS-->
+<link href="style.css" rel="stylesheet" type="text/css">
+        
+	<script>    
+        /* Some jQuery for better functionality */
+		$(document).ready(function() {
+            /* Show divs content on click */
+            $('.show_panel_option').click(function(){                
+                /* Change navigation panel color when panel item is active */
+                $('.show_panel_option').css('background','#444');                
+                $(this).css('background','#cd5353','color','#fff');
+                
+                /* Show hide divs content on click */
+                $('.targetDiv').hide();
+                $('#'+$(this).attr('target')).show();
+            });	    			            
+               $('[data-toggle="tooltip"]').tooltip();   
+		});	
+    </script>
+
+</head>
+
+<body>
+<div class="container main_container">   
+    <!-- Main left container that holds main image and navigation panel -->
+    <div class="col-md-4 left_container">   
+        <div>
+            <img class=" img-responsive header_image" src='http://sharemyweb.com/wp-content/uploads/2016/06/sharemyweb_cv_main_photo.png' alt='image of Web Developer'>
+        </div>
+        <div id='main_nav_panel_holder'>  
+            <!-- Naviagation Panel List -->
+            <ul class='panel_list'>
+                <li class='panel_item'>
+                    <a class="hvr-wobble-horizontal hvr-shutter-out-horizontal show_panel_option " target="about">
+                        <i class="fa fa-user main_nav_icons"></i>About
+                    </a>
+                </li>            
+                <li class='panel_item'>
+                    <a class="hvr-wobble-horizontal hvr-shutter-out-horizontal show_panel_option " target="website">
+                        <i class="fa fa-laptop main_nav_icons"></i>Website
+                    </a>
+                </li>                  
+                <li class='panel_item'>
+                    <a class="hvr-wobble-horizontal hvr-shutter-out-horizontal show_panel_option " target="experience">
+                        <i class="fa fa-briefcase main_nav_icons"></i>Experience
+                    </a>
+                </li>   
+                <li class='panel_item'>
+                    <a class="hvr-wobble-horizontal hvr-shutter-out-horizontal show_panel_option" style='background-color:#cd5353;' target="contact">
+                        <i class="fa fa-phone main_nav_icons"></i>Contact
+                    </a>
+                </li>                             
+            </ul>
+        </div>
+    </div>
+    
+    <!-- Main right container that holds all the data requested by navigation panel. 
+         Data in this container is divided on 4 separate sections -->
+    <div class="col-md-8 right_container">          
+        <!--'ABOUT' SECTION-->
+        <div id="about" class="row targetDiv">              
+            <div class='section_holder'>  
+                <div class='section_title'>
+                    <h1 class="display_title">About Me</h1>                    
+                </div>
+                <div class='section_content main_job_title'>
+                    <h3 class='job_title'>Web Developer/Designer</h3>
+                    <div class="rw-words rw-words-1">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>jQuery</span>
+                        <span>PHP</span>
+                        <span>MySQL</span>
+                        <span>Wordpress</span>
+                    </div>
+                </div>
+                <div class='section_content my_info_tables'>                
+                    <div class='col-sm-6' style='margin-bottom:20px;'>
+                        <table class='table info_table'>
+                            <tbody>
+                                <tr class='table_row'>
+                                    <td class='table_data table_data_property'>Name</td>
+                                    <td class='table_data table_data_value'>Michal Kwasniewski</td>                    
+                                </tr>
+                                <tr class='table_row'>
+                                    <td class='table_data table_data_property'>Nationality</td>
+                                    <td class='table_data table_data_value'>Polish</td>                    
+                                </tr>
+                                <tr class='table_row'>
+                                    <td class='table_data table_data_property'>D.o.B</td>
+                                    <td class='table_data table_data_value'>22/Feb/1989</td>                    
+                                </tr>    
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class='col-sm-6'>
+                        <table class='table info_table'>
+                            <tbody>
+                                <tr class='table_row'>
+                                    <td class='table_data table_data_property'>Email</td>
+                                    <td class='table_data table_data_value'>it@sharemyweb.com</td>      
+                                </tr>
+                                <tr class='table_row'>
+                                    <td class='table_data table_data_property'>Mobile</td>
+                                    <td class='table_data table_data_value'>+44 7777777777</td>    
+                                </tr>
+                                <tr class='table_row'>
+                                    <td class='table_data table_data_property'>Website</td>
+                                    <td class='table_data table_data_value'><a href='http://www.sharemyweb.com'>sharemyweb.com</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>                        
+                </div> 
+                <div class='section_content'>  
+                    <div class='section_desc'>
+                        <span class='section_desc_beginning_sentence'>Hello, I am a Web Development &amp; Web Design    Enthusiast</span>  
+                        <span>, who is seeking to gain a full-time position as a PHP Developer in a prospective IT company in which I will have an opportunity to
+develop my skills further and work on several projects so I could plan, write, test and debug code so the 
+web application works correctly on all suitable devices and web browsers.</span>
+                    </div>
+                </div>
+            </div>
+            <div class='section_holder'>                  
+                <div class='section_title'>
+                    <h1 class="display_title">Education</h1>
+                </div>       
+                <div class='section_content'>               
+                    <div class='section_desc'>
+                        <img class='university_logo' src='http://sharemyweb.com/wp-content/uploads/2016/06/uwl_logo.png' style='width:50px;' alt='University Logo'>
+                        <span class='section_desc_beginning_sentence'>I am a freshly baked Computer Science graduate.</span>
+                        <span>During my 3 years study at University of West London I have gained a foundation of SQL databases, Web Development, Web Design and Software Development technologies such as PHP, Python, JAVA, MySQL, Oracle, HTML, CSS and JavaScript.
+At University I have completed Internet Technologies, SQL Databases and Programming(Python, JAVA) modules, which gave me great
+foundation and crucial skills that I believe every person seeking a Web Developer position should have.
+                        </span>
+                    </div>                
+                </div>
+            </div>
+            <div class='section_holder'>  
+                <div id='interests'>
+                    <div class='section_title'>
+                        <h1 class="display_title">Interests</h1>
+                    </div>
+                    <div class='section_content'>
+                        <div class='interest_icons'>
+                            <ul class='interest_list'>
+                                <li class='interest_list_item'>
+                                    <i class="fa fa-mortar-board interests_toggle_desc" data-toggle="tooltip" title='Academia Learning' data-delay="100" data-placement="top"></i>
+                                </li>
+                                <li class='interest_list_item'>
+                                    <i class="fa fa-code interests_toggle_desc" data-toggle="tooltip" title='Web Development & Coding' data-placement="top"></i>
+                                </li>
+                                <li class='interest_list_item'>
+                                    <i class="fa fa-coffee interests_toggle_desc" data-toggle="tooltip" title='Coffee' data-placement="top"></i>
+                                </li>
+                                <li class='interest_list_item'>
+                                    <i class="fa fa-soccer-ball-o interests_toggle_desc" data-toggle="tooltip" title='Football' data-placement="top"></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>   
+            </div>            
+    </div>
+        <!--CONTACT SECTION-->
+        <div id="contact" class="targetDiv active" style="display:block;">
+            <div class='section_holder'>  
+                <div class='section_title'>
+                    <h1 class="display_title">Location</h1>  
+                </div>
+                <div class='section_content'>
+                    <div class='google_map'>
+                        <div class='google_map_holder'>
+                            <div id="googleMap" style="width:100%;"></div>
+                        </div>            
+                    <script>    
+                        /* Google map */
+                        var map;
+                        function initMap() {
+                            /* London Location by latitude and longitude*/
+                            myLocation = {lat: 51.508742, lng: -0.3};
+                            map = new google.maps.Map(document.getElementById('googleMap'), {
+                            center: myLocation,
+                            zoom: 10
+                            });
+                                /* google map marker */
+                                var marker = new google.maps.Marker({
+                                position: myLocation,
+                                map: map,
+                                title: 'Location Marker'
+                            });
+                                /* set marker on google map */
+                                marker.setMap(map);
+                        }
+                            // Load google map 
+                            google.maps.event.addDomListener(window, 'load', initMap);       
+                    </script>
+                    
+                    </div>
+                </div>
+            </div>  
+            <div class='section_holder'>  
+                <div class='section_title'>
+                    <h1 class="display_title">Contact Info</h1>  
+                </div>
+                <div class='section_content'>
+                    <table class='table info_table' style='text-align:center;'>
+                        <tbody>  
+                            <tr class='table_row'>
+                                <td class='table_data table_data_property'>
+                                    <i class="fa fa-envelope"></i>                    
+                                </td>
+                                <td class='table_data table_data_value'>it@sharemyweb.com</td>                                      
+                            </tr>
+                            <tr class='table_row'>
+                                <td class='table_data table_data_property'>
+                                    <i class="fa fa-phone"></i>    
+                                </td>
+                                <td class='table_data table_data_value'>+44 7777777777</td>                    
+                            </tr>
+                            <tr class='table_row'>
+                                <td class='table_data table_data_property'>
+                                    <a href='http://www.sharemyweb.com' target="_blank">
+                                        <i class="fa fa-laptop"></i>            
+                                    </a>
+                                </td>
+                                <td class='table_data table_data_value'>
+                                    <a href='http://www.sharemyweb.com' target="_blank">sharemyweb.com</a>
+                                </td>                    
+                            </tr>
+                        </tbody>
+                    </table>                    
+                </div>
+            </div>
+        </div>
+        <!--WEBSITE SECTION-->
+        <div id="website" class="targetDiv">
+            <div class='section_holder'>  
+                <div class='section_title'>
+                    <h1 class="display_title">Website/Blog</h1>
+                </div>
+                <div class='section_content'>
+                    <a href='http://www.sharemyweb.com' target='_blank'><img class='img-responsive' src='http://sharemyweb.com/wp-content/uploads/2016/06/sharemyweb_logo_cv.png' alt='sharemyweb.com Logo'></a>
+                </div>
+                <div class='section_content'>
+                    <div class='section_desc'>
+                        <div class='website_desc'>
+                            <span class='section_desc_beginning_sentence'>Sharemyweb.com</span>
+                            <span>is a blog dedicated to Web Development and Web Design solutions, ready code snippets, tutorials and ready web applications to be downloaded by anyone. 
+        All codes and projects are available for download for free.
+        Sharemyweb.com is a blog for all Web Developers, Web Designers, Students, Web Enthusiasts, coding enthusiasts and anyone who enjoys free solutions.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+            <div class='section_holder'>                  
+                <div class='recent_posts'>
+                    <div class='section_title'>
+                        <h2 class='display_title'>Recent Posts</h2>
+                    </div>
+                    <div class='section_content'>
+                        <div class='sharemyweb_post'>
+                            <p class='post_title'>Responsive Pagination with PHP, MySQL and Bootstrap</p>
+                            <a href='http://sharemyweb.com/responsive-pagination-with-php-mysql-and-bootstrap/' target='_blank'><img class='img-responsive' src='http://sharemyweb.com/wp-content/uploads/2016/06/sharemyweb_responsive_pagination.png' alt='PHP pagination image from: http://sharemyweb.com/responsive-pagination-with-php-mysql-and-bootstrap/'></a>
+                        </div>
+                        <hr>
+                        <div class='sharemyweb_post' style='margin-bottom:20px;'>
+                            <p class='post_title'>jQuery, Ajax, PHP, MySQL, Bootstrap Shopping Cart</p>
+                            <a href='http://sharemyweb.com/ajax-shopping-cart-php-jquery-bootstrap/' target='_blank'><img class='img-responsive' src='http://sharemyweb.com/wp-content/uploads/2016/06/sharemyweb_ajax_shopping_cart.png' alt='Ajax shop image from: http://sharemyweb.com/ajax-shopping-cart-php-jquery-bootstrap/ '></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>            
+        <!--EXPERIENCE SECTION-->
+        <div id="experience" class="targetDiv">
+            <div class='section_holder'>  
+                <div class='section_title'>
+                    <h1 class="display_title">Experience</h1>
+                </div>
+                <div class='section_holder'>  
+                    <div class='section_content'>
+                        <div class='job_description' style='margin-bottom:40px;'>
+                            <h2 class='job_title'>Part-time PHP Developer : Awesome Company</h2>
+                             <i class="fa fa-calendar"></i><span><em> November / 2015-</em><span style='background-color:#cd5353; color:#fff; padding:3px; border-radius:6px;'>Present</span></span>                       
+                        </div>
+                    </div>
+                    <div class='section_content'>                        
+                        <ul class='job_responsibilities_list'>
+                            <li>
+                                - Develop, record and maintain cutting edge web-based PHP applications on various platforms.
+                            </li>
+                            <li>
+                                - Write technical as well as non-technical specifications/documentation.
+                            </li>
+                            <li>
+                                - Development and database optimization.
+                            </li>
+                            <li>
+                                - Backing up website content on regular basis.
+                            </li>
+                            <li>
+                                - Maintaining and impoving visual aspects of web applications.
+                            </li>
+                            <li>
+                                - Writing, testing and debugging code
+                            </li>                        
+                        </ul>                        
+                    </div>
+                </div>
+                <hr>
+                <div class='section_content'>
+                    <div class='job_description'>
+                        <h2 class='job_title'>Freelance Web Developer / Designer</h2>
+                        <i class="fa fa-calendar"></i><span><em> July / 2013 - January / 2015</em></span>
+                    </div>
+                </div>
+                <div class='section_content'>
+                    <ul class='job_responsibilities_list'>
+                        <li>
+                            - Development of websites using Wordpress
+                        </li>
+                        <li>
+                            - Website Administration Linux(RedHat)
+                        </li>
+                        <li>
+                            - Backing-up website content
+                        </li>
+                        <li>
+                            - Create and maintain website front-end functionalities
+                        </li>
+                        <li>
+                            - Management and maintenance of client websites, including website updates
+                        </li>
+                        <li>
+                            - Buying domain names and setting up DNS
+                        </li>
+                        <li>
+                            - Emails redirection with custom email address
+                        </li>
+                    </ul>                        
+                </div>                    
+            </div>
+        </div>
+    </div>
+</div>
+</body>
